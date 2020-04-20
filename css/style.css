@@ -72,7 +72,7 @@ img {
 }
 
 .middle-nav .font-awsome .bars {
-    order: 1;
+  order: 1;
 }
 
 .lower-nav {
@@ -95,7 +95,7 @@ img {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    padding-left: .5rem;
+    padding-left: 0.5rem;
     margin-right: 0;
     margin-left: 0;
   }
@@ -166,10 +166,6 @@ img {
     display: none;
   }
 
-  .middle-nav span {
-    order: 1;
-  }
-
   .middle-nav ul li:nth-child(6),
   .middle-nav ul li:nth-child(7) {
     display: none;
@@ -192,6 +188,7 @@ img {
   .main-nav .md-logo {
     display: none;
   }
+
   .middle-nav ul li:nth-child(6),
   .middle-nav ul li:nth-child(7) {
     display: inline-block;
