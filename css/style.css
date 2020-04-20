@@ -91,11 +91,13 @@ img {
 @media (max-width: 400px) {
   .lower-nav a {
     display: inline-block;
-    width: 97vw;
+    width: 95vw;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
     padding-left: .5rem;
+    margin-right: 0;
+    margin-left: 0;
   }
 }
 
