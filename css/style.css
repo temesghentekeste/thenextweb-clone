@@ -71,6 +71,10 @@ img {
   border-left: 1px solid #eee;
 }
 
+.middle-nav .font-awsome .bars {
+    order: 1;
+}
+
 .lower-nav {
   height: 60px;
   background: var(--yellow-color);
