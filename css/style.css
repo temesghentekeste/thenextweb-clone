@@ -84,6 +84,17 @@ img {
   margin-right: 0.4rem;
 }
 
+@media (max-width: 400px) {
+  .lower-nav a {
+    display: inline-block;
+    width: 97vw;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding-left: .5rem;
+  }
+}
+
 /* Media Queries */
 @media (min-width: 768px) {
   .main-nav {
