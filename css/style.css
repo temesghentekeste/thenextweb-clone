@@ -12,52 +12,36 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: 'Helvetica Neue', Arial, sans-serif;
-  background: var(--light-color);
-}
+body { background: var(--light-color); }
 
 a {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
 }
 
-ul {
-  list-style: none;
-}
+ul { list-style: none; }
 
-ul li {
-  display: inline-block;
-}
+ul li { display: inline-block; }
 
-img {
-  width: 100%;
-}
+img { width: 100%; }
 
 /* ============================================ Utility Classes ============================================= */
 
-.flex-h {
-  display: flex;
-  flex-flow: row nowrap;
-}
+.flex-h { display: flex; flex-flow: row nowrap; }
 
-.flex-v {
-  display: flex;
-  flex-direction: column;
-}
+.flex-v { display: flex; flex-direction: column; }
 
-.space-between {
-  justify-content: space-between;
-}
+.space-between { justify-content: space-between;}
 
-.fill-parent {
-  width: 100%;
-  height: 100%;
-}
+.fill-parent { width: 100%; height: 100%; }
 
-.s-b {
-  border: 1px solid;
-}
+.s-b { border: 1px solid; }
+
+.font-orbitron { font-family: 'Orbitron', sans-serif;}
+
+.font-public { font-family: 'Public Sans', sans-serif; }
+
+.font-manrope { font-family: 'Manrope', sans-serif; }
 
 /* ================================================== Nav section ============================================= */
 
@@ -120,6 +104,11 @@ img {
   z-index: 1;
 }
 
+.card-content-left{
+  position: relative;
+  z-index: 6;
+}
+
 .right-card-bottom {
   background: url(../images/WhatsApp.png) no-repeat center center/cover;
   position: relative;
@@ -154,7 +143,7 @@ img {
   display: none;
 }
 
-.bottom-content{
+.bottom-text {
   
 }
 
