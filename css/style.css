@@ -207,7 +207,7 @@ img {
 }
 
 img[src='/images/tnw-header.png'] {
-  width: 34%;
+  width: 51%;
   filter: brightness(0) invert(1);
 }
 
@@ -226,7 +226,9 @@ img[src='/images/tnw-header.png'] {
 }
 
 @media (min-width: 768px) {
-  /************************ 8 Nav Section************************************ */
+
+  /************************  Nav Section************************************ */
+  
   .main-nav {
     display: grid;
     grid-template-columns: 106px 1fr;
@@ -310,7 +312,6 @@ img[src='/images/tnw-header.png'] {
     grid-template-rows: repeat(2, 1fr);
     grid-gap: 0.5rem;
     height: 52vh;
-    border: 1px solid brown;
   }
 
   .left-card {
@@ -360,9 +361,22 @@ img[src='/images/tnw-header.png'] {
   }
 
   /* ***************************Header Section*********************************** */
-  .gradient-red,
+
+  .header-cards {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 0.5rem;
+    height: 73vh;
+  }
+
+  .gradient-red { display: block; }
+
   .card-logo-content {
     display: block;
+    position: absolute;
+    top: 14px;
+    left: 20px;
+    margin-right: 1rem;
   }
 
   .card-logo-content {
@@ -370,4 +384,24 @@ img[src='/images/tnw-header.png'] {
     justify-content: space-between;
     justify-self: flex-start;
   }
+
+  .date-span {
+    font-size: .85rem;
+    color: var(--light-color);
+    position: relative;
+    top: 9px
+  }
+
+  .card-heading {
+    display: inline-block;
+    margin-top: 0.3rem;
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #fff;
+  }
+
+  .left-card .card-heading { font-size: 3.4rem; }
+
+  .card-content-right .bottom-content { margin-top: 5rem; }
+
 }
