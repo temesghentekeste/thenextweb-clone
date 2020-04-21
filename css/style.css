@@ -2,7 +2,7 @@
   --primary-color: #f94020;
   --dark-color: #131313;
   --light-color: #fefefe;
-  --yellow-color: #fae161;
+  --yellow-color: #fd3;
   --sm-font: 0.875rem;
 }
 
@@ -34,7 +34,7 @@ img {
   width: 100%;
 }
 
-/* Utility classes */
+/* ============================================ Utility Classes ============================================= */
 
 .flex-h {
   display: flex;
@@ -50,8 +50,18 @@ img {
   justify-content: space-between;
 }
 
+.fill-parent {
+  width: 100%;
+  height: 100%;
+}
+
+.s-b {
+  border: 1px solid;
+}
+
+/* ================================================== Nav section ============================================= */
+
 .main-nav {
-  height: 50px;
   flex-wrap: nowrap;
 }
 
@@ -86,6 +96,72 @@ img {
 .lower-nav a {
   color: var(--dark-color);
   margin-right: 0.4rem;
+}
+
+/* ================================================== Header section ============================================= */
+
+.header-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  border: 1px solid green;
+  height: 75vh;
+}
+
+.left-card {
+  background: url(../images/AWS-Amazon.png) no-repeat center center/cover;
+  position: relative;
+  z-index: 1;
+}
+
+.right-card-top {
+  background: url(../images/broken-comp.png) no-repeat center center/cover;
+  position: relative;
+  z-index: 1;
+}
+
+.right-card-bottom {
+  background: url(../images/WhatsApp.png) no-repeat center center/cover;
+  position: relative;
+  z-index: 1;
+}
+
+.card-link {
+  position: absolute;
+  border: 1px solid blue;
+  z-index: 5;
+}
+
+.gradient-dark {
+  background: rgba(0, 0, 0, 0.25) url(../images/image-gradient.png) no-repeat;
+  background-position: 0 0;
+  background-size: 100% 100%;
+  position: absolute;
+  z-index: 2;
+}
+
+.gradient-red {
+  display: none;
+  background: transparent url(../images/cover-gradient.png) no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+  position: absolute;
+  mix-blend-mode: lighten;
+  z-index: 4;
+}
+
+.top-content {
+  display: none;
+}
+
+.bottom-content{
+  
+}
+
+img[src="/images/tnw-header.png"] {
+  width: 34%;
+  filter: brightness(0) invert(1);
+  
 }
 
 /* Media Queries */
