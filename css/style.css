@@ -167,17 +167,16 @@ img {
   z-index: 4;
 }
 
-.top-content {
+.card-logo-content {
   display: none;
 }
 
 .bottom-content {
-  display:flex;
+  display: flex;
   flex-direction: column;
   justify-content: flex-end;
   height: 25vh;
   padding: 1rem;
-
 }
 
 .caption {
@@ -198,7 +197,7 @@ img {
 .author {
   display: inline-block;
   white-space: nowrap;
-  margin-top: .4rem;
+  margin-top: 0.4rem;
 }
 
 .author span,
@@ -227,7 +226,7 @@ img[src='/images/tnw-header.png'] {
 }
 
 @media (min-width: 768px) {
-  /************************8 Nav Section************************************ */
+  /************************ 8 Nav Section************************************ */
   .main-nav {
     display: grid;
     grid-template-columns: 106px 1fr;
@@ -305,7 +304,7 @@ img[src='/images/tnw-header.png'] {
   }
 
   /* ***************************Header Section*********************************** */
-  
+
   .header-cards {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -335,13 +334,11 @@ img[src='/images/tnw-header.png'] {
     justify-content: flex-end;
   }
 
-  
   .right-card-top .bottom-content,
   .right-card-bottom .bottom-content {
     font-size: 16px;
     line-height: 1;
   }
- 
 }
 
 @media (min-width: 920px) {
@@ -360,5 +357,17 @@ img[src='/images/tnw-header.png'] {
 
   .lower-nav {
     justify-content: start;
+  }
+
+  /* ***************************Header Section*********************************** */
+  .gradient-red,
+  .card-logo-content {
+    display: block;
+  }
+
+  .card-logo-content {
+    display: flex;
+    justify-content: space-between;
+    justify-self: flex-start;
   }
 }
