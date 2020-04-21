@@ -123,6 +123,7 @@ img {
   background: url(../images/AWS-Amazon.png) no-repeat center center/cover;
   position: relative;
   z-index: 1;
+  border: 1px transparent;
 }
 
 .right-card-top {
@@ -145,7 +146,6 @@ img {
 
 .card-link {
   position: absolute;
-  border: 1px solid blue;
   z-index: 5;
 }
 
@@ -172,8 +172,12 @@ img {
 }
 
 .bottom-content {
-  margin-top: 2rem;
-  margin-left: 0.5rem;
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 25vh;
+  padding: 1rem;
+
 }
 
 .caption {
@@ -301,11 +305,13 @@ img[src='/images/tnw-header.png'] {
   }
 
   /* ***************************Header Section*********************************** */
+  
   .header-cards {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-gap: 0.5rem;
-    height: 50vh;
+    height: 52vh;
+    border: 1px solid brown;
   }
 
   .left-card {
@@ -323,15 +329,15 @@ img[src='/images/tnw-header.png'] {
   }
 
   .card-content-left {
-    margin-top: 13rem;
     line-height: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
   }
 
   
   .right-card-top .bottom-content,
   .right-card-bottom .bottom-content {
-    margin-top: 1rem;
-    padding: 2rem 0.4rem ;
     font-size: 16px;
     line-height: 1;
   }
