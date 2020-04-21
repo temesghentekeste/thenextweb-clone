@@ -88,10 +88,11 @@ img {
   margin-right: 0.4rem;
 }
 
+/* Media Queries */
 @media (max-width: 400px) {
   .lower-nav a {
     display: inline-block;
-    width: 95vw;
+    width: 97vw;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -101,7 +102,6 @@ img {
   }
 }
 
-/* Media Queries */
 @media (min-width: 768px) {
   .main-nav {
     display: grid;
