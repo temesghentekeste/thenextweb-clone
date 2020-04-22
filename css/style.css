@@ -217,6 +217,7 @@ img[src='/images/tnw-header.png'] {
 
 .latest-news {
   margin: 2rem 0.5rem;
+  border: 1px solid green;
 }
 
 .section-link {
@@ -518,7 +519,7 @@ img[src='/images/tnw-header.png'] {
 
   /* Latest News Section */
 
-  .latest-news {
+  .container {
     max-width: 1100px;
     margin: auto;
     margin-top: 2rem;
@@ -526,6 +527,7 @@ img[src='/images/tnw-header.png'] {
 
   .latest-news-cards {
     grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
   }
 
 
