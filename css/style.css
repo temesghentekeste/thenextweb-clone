@@ -134,7 +134,7 @@ img {
 .card-content-left,
 .card-content-right {
   position: relative;
-  z-index: 6;
+  z-index: 5;
 }
 
 .right-card-bottom {
@@ -145,7 +145,7 @@ img {
 
 .card-link {
   position: absolute;
-  z-index: 5;
+  z-index: 6;
 }
 
 .gradient-dark {
@@ -189,6 +189,10 @@ img {
   margin-top: 0.3rem;
   font-size: 1.25rem;
   font-weight: 800;
+}
+
+.card-heading a {
+  
   color: #fff;
 }
 
@@ -215,10 +219,11 @@ img[src='/images/tnw-header.png'] {
   margin: 2rem 0.5rem;
 }
 
-.latest-news h2 {
-  margin-bottom: 1rem;
+.section-link {
+  display: inline-block;
+  margin-bottom: 2rem;
   font-weight: 900;
-  font-size: 1.75rem;
+  font-size: 1.12rem;
   color: var(--primary-color);
 }
 
@@ -398,6 +403,12 @@ img[src='/images/tnw-header.png'] {
     justify-content: flex-end;
   }
 
+  .card-content-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
   .right-card-top .bottom-content,
   .right-card-bottom .bottom-content {
     font-size: 16px;
@@ -466,9 +477,9 @@ img[src='/images/tnw-header.png'] {
 
   .card-logo-content {
     display: block;
-    position: absolute;
-    top: 14px;
-    left: 20px;
+    position: relative;
+    top: -184px;
+    left: 3px;
     margin-right: 1rem;
   }
 
@@ -497,8 +508,12 @@ img[src='/images/tnw-header.png'] {
     font-size: 3.4rem;
   }
 
-  .card-content-right .bottom-content {
-    margin-top: 5rem;
+  
+
+  .card-content-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
   }
 
   /* Latest News Section */
