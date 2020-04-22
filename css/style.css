@@ -192,7 +192,6 @@ img {
 }
 
 .card-heading a {
-  
   color: #fff;
 }
 
@@ -215,7 +214,7 @@ img[src='/images/tnw-header.png'] {
 
 /* Latest News Section */
 
-.latest-news {
+.latest-news, .latest-funding {
   margin: 2rem 0.5rem;
   border: 1px solid green;
 }
@@ -268,6 +267,58 @@ img[src='/images/tnw-header.png'] {
   color: #aaa;
   font-size: 0.75rem;
 }
+
+/* Latest Funding Section */
+
+.latest-funding a {
+  color: var(--dark-color);
+}
+
+.latest-funding img {
+  width: 61px;
+  height: 63px;
+}
+
+.latest-funding .section-link, .latest-funding-heading a {
+  color: var(--primary-color);
+  margin-bottom: .85rem;
+}
+
+.latest-funding-heading {
+  margin-bottom: 1rem;
+}
+
+.latest-funding-heading a {
+  display: block;
+  margin-bottom: .7rem;
+}
+
+.latest-news-cards {
+  display:grid;
+  grid-template-columns: 1fr;
+}
+
+.funding-card {
+  display: flex;
+  flex-direction: column;
+  position: relative;;
+}
+
+.fund-card-header .top {
+  display: block;
+  padding: 10px 16px 10px 84px;
+  background: var(--primary-color);
+  color: var(--light-color);
+  font-size: 18px;
+  margin-bottom: 2rem;;
+}
+
+.fund-card-header img {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+}
+
 
 /* Media Queries */
 @media (max-width: 400px) {
@@ -440,11 +491,20 @@ img[src='/images/tnw-header.png'] {
   }
 
   .latest-news-card .card-description {
-   margin-left: 0;
+    margin-left: 0;
   }
+
+  /* Latest Funding Section */
 }
 
 @media (min-width: 920px) {
+  /* Utility Classes for desktop screen sizes */
+
+  .container {
+    max-width: 1100px;
+    margin: auto;
+  }
+
   .main-nav {
     display: block;
   }
@@ -509,8 +569,6 @@ img[src='/images/tnw-header.png'] {
     font-size: 3.4rem;
   }
 
-  
-
   .card-content-right {
     display: flex;
     flex-direction: column;
@@ -519,16 +577,8 @@ img[src='/images/tnw-header.png'] {
 
   /* Latest News Section */
 
-  .container {
-    max-width: 1100px;
-    margin: auto;
-    margin-top: 2rem;
-  }
-
   .latest-news-cards {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
   }
-
-
 }
