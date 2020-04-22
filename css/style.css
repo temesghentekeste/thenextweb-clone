@@ -67,8 +67,8 @@ img {
   font-family: 'Public Sans', sans-serif;
 }
 
-.font-manrope {
-  font-family: 'Manrope', sans-serif;
+.font-inter {
+  font-family: 'Inter', sans-serif;
 }
 
 /* ================================================== Nav section ============================================= */
@@ -209,6 +209,61 @@ img[src='/images/tnw-header.png'] {
   filter: brightness(0) invert(1);
 }
 
+/* Latest News Section */
+
+.latest-news {
+  margin: 2rem 0.5rem;
+}
+
+.latest-news h2 {
+  margin-bottom: 1rem;
+  font-weight: 900;
+  font-size: 1.75rem;
+  color: var(--primary-color);
+}
+
+.latest-news .chevron {
+  font-size: 0.5rem;
+}
+
+.latest-news-card > a {
+  display: inline-block;
+  width: 75px;
+  height: 75px;
+}
+
+.latest-news-card img {
+  width: 100%;
+}
+
+.latest-news-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.latest-news-card {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 0.85rem;
+}
+
+.latest-news-card .card-description {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0.85rem;
+}
+
+.latest-news-card p {
+  color: var(--dark-color);
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.latest-news-card .author {
+  color: #aaa;
+  font-size: 0.75rem;
+}
+
 /* Media Queries */
 @media (max-width: 400px) {
   .lower-nav a {
@@ -224,7 +279,6 @@ img[src='/images/tnw-header.png'] {
 }
 
 @media (min-width: 768px) {
-
   /************************  Nav Section************************************ */
 
   .main-nav {
@@ -305,8 +359,15 @@ img[src='/images/tnw-header.png'] {
 
   /* ***************************Header Section*********************************** */
 
+  /* 
+  To do:
+    1. Narrow and bold fonts
+    2. some problem with the right cards position
+    3. we applied height and max-height for desktop version 
+  */
+
   header {
-    margin: .5rem;
+    margin: 0.5rem;
     border: 5px dashed firebrick;
   }
 
@@ -314,7 +375,7 @@ img[src='/images/tnw-header.png'] {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-gap: 0.5rem;
-    height: 52vh;
+    /* height: 52vh; */
   }
 
   .left-card {
@@ -369,10 +430,13 @@ img[src='/images/tnw-header.png'] {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-gap: 0.5rem;
-    height: 77vh;
+    height: 560px;
+    max-height: 560px;
   }
 
-  .gradient-red { display: block; }
+  .gradient-red {
+    display: block;
+  }
 
   .card-logo-content {
     display: block;
@@ -389,10 +453,10 @@ img[src='/images/tnw-header.png'] {
   }
 
   .date-span {
-    font-size: .85rem;
+    font-size: 0.85rem;
     color: var(--light-color);
     position: relative;
-    top: 9px
+    top: 9px;
   }
 
   .card-heading {
@@ -403,8 +467,11 @@ img[src='/images/tnw-header.png'] {
     color: #fff;
   }
 
-  .left-card .card-heading { font-size: 3.4rem; }
+  .left-card .card-heading {
+    font-size: 3.4rem;
+  }
 
-  .card-content-right .bottom-content { margin-top: 5rem; }
-
+  .card-content-right .bottom-content {
+    margin-top: 5rem;
+  }
 }
