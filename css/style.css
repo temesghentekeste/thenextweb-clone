@@ -116,7 +116,6 @@ img {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 1fr);
-  height: 75vh;
 }
 
 .left-card {
@@ -175,7 +174,6 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  height: 25vh;
   padding: 1rem;
 }
 
@@ -228,7 +226,7 @@ img[src='/images/tnw-header.png'] {
 @media (min-width: 768px) {
 
   /************************  Nav Section************************************ */
-  
+
   .main-nav {
     display: grid;
     grid-template-columns: 106px 1fr;
@@ -307,6 +305,11 @@ img[src='/images/tnw-header.png'] {
 
   /* ***************************Header Section*********************************** */
 
+  header {
+    margin: .5rem;
+    border: 5px dashed firebrick;
+  }
+
   .header-cards {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -366,7 +369,7 @@ img[src='/images/tnw-header.png'] {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-gap: 0.5rem;
-    height: 73vh;
+    height: 77vh;
   }
 
   .gradient-red { display: block; }
