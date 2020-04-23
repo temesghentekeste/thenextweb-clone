@@ -300,7 +300,7 @@ img[src='/images/tnw-header.png'] {
   margin-bottom: 0.7rem;
 }
 
-.latest-fumding-cards {
+.latest-funding-cards {
   display: grid;
   grid-template-columns: 1fr;
 }
@@ -364,7 +364,6 @@ img[src='/images/tnw-header.png'] {
   top: 12px;
   left: 12px;
 }
-
 
 /* Media Queries */
 @media (max-width: 400px) {
@@ -516,10 +515,6 @@ img[src='/images/tnw-header.png'] {
 
   /* Latest News Section */
 
-  .latest-news {
-    margin: 2rem 1.5rem;
-  }
-
   .latest-news-cards {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -543,6 +538,37 @@ img[src='/images/tnw-header.png'] {
   }
 
   /* Latest Funding Section */
+
+  .latest-funding-cards {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+  }
+
+  .latest-funding-cards > *:last-child {
+    display: none;
+  }
+
+  .latest-funding-heading .left {
+    display: flex;
+  }
+
+  .latest-funding-heading .left > * {
+    margin-right: 0.5rem;
+  }
+
+  .latest-funding-heading .left > *::after {
+    height: 13px;
+    display: inline-block;
+    margin-left: 0.5rem;
+    width: 1px;
+    background: var(--primary-color);
+    border-right: 1px white;
+    content: '';
+  }
+
+  .latest-funding-heading .left > *:last-child::after {
+    display: none;
+  }
 }
 
 @media (min-width: 920px) {
