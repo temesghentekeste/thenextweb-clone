@@ -4,6 +4,11 @@
   --light-color: #fefefe;
   --yellow-color: #fd3;
   --sm-font: 0.875rem;
+  --font-orbitron: font-family: 'Orbitron', sans-serif;
+  --font-public: font-family: 'Public Sans', sans-serif;
+  --font-inter: font-family: 'Inter', sans-serif;
+
+
 }
 
 * {
@@ -310,8 +315,48 @@ img[src='/images/tnw-header.png'] {
   background: var(--primary-color);
   color: var(--light-color);
   font-size: 18px;
-  margin-bottom: 2rem;;
 }
+
+.fund-card-header .bottom {
+  background: #ffece7;
+  display: block;
+  padding: 10px 80px;
+  font-size: 18px;
+}
+
+.fund-card-header .bottom span {
+  display: block;
+  font-weight: 600;
+}
+
+.fund-card-header .bottom span:last-child {
+  font-weight: normal;
+  font-family: var(--font-orbitron);
+  font-size: 11px;
+}
+
+.funding-card .body {
+  padding: 16px 0 10px;
+  font-size: 13px;
+  display: block;
+  margin-left: 16px;
+  border-bottom: 1px solid #ffece7;
+}
+
+.funding-card .body a {
+  display: block;
+  margin-bottom: 0.8rem;
+}
+
+.funding-card .body a i {
+  margin-right: 0.8rem;
+}
+
+.fund-card-footer {
+  font-size: 11px;;
+  padding: 16px 0 16px 10px;
+}
+
 
 .fund-card-header img {
   position: absolute;
