@@ -380,19 +380,72 @@ img[src='/images/tnw-header.png'] {
 .most-popular-cards {
   display: grid;
   grid-template-columns: 1fr;
-  border: 1px solid teal;
 }
 
 .popular-top {
   position: relative;
   background: url(../images/zoom-5.0.jpg) no-repeat center center/cover;
   min-height: 298px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .popular-top .bottom-content {
   position: relative;
-  min-height: inherit;
-  z-index: 4;
+  z-index: 7;
+}
+
+.popular-top .author { font-size: .8rem; }
+
+.popular-top .caption2 {
+  color: white;
+  font-size: .6rem;
+}
+
+.pop-middle-left {
+  background-color: #fff4f2;
+  flex: 1;
+  padding-top: 10px;
+  padding-left: 10px;
+  color: var(--primary-color);
+}
+
+.pop-middle-left span {
+  font-size: .7rem;
+}
+
+.pop-middle-left a{
+  display: inline-block;
+  padding-top: 3px;
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.pop-middle-right {
+  width: 106px;
+  height: 90px;
+  padding-top: 10px;
+}
+
+.popular-bottom a{
+  color: #555;
+  font-size: .8rem;
+}
+
+.popular-bottom li {
+  display: flex;
+  padding: 6px 8px;
+  border-bottom: 1px solid #eee;
+}
+
+.popular-bottom li:before {
+  content: '\2022';
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  color: var(--primary-color);
 }
 
 /* Media Queries */
@@ -410,6 +463,11 @@ img[src='/images/tnw-header.png'] {
 }
 
 @media (min-width: 768px) {
+
+  .container {
+    margin: 0 21px !important;
+  }
+
   /************************  Nav Section************************************ */
 
   .main-nav {
@@ -599,6 +657,18 @@ img[src='/images/tnw-header.png'] {
   .latest-funding-heading .left > *:last-child::after {
     display: none;
   }
+
+  /* ============================================= Most Popular section ================================ */
+
+  .most-popular-cards {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.24em;
+  }
+
+  .popular-top {
+    min-height: 340px;
+  }
+
 }
 
 @media (min-width: 920px) {
@@ -696,4 +766,31 @@ img[src='/images/tnw-header.png'] {
   .latest-funding-cards > *:last-child {
     display: block;
   }
+
+  /* ============================================= Most Popular section ================================ */
+
+  .most-popular-cards {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1.24em;
+  }
+
+  .popular-top {
+    min-height: 240px;
+  }
+
+  .popular-top .caption {
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+  
+  .popular-top .card-heading {
+    display: inline-block;
+    margin-top: 0.3rem;
+    font-size: 1.25rem;
+    font-weight: 800;
+  }
+
 }
+
