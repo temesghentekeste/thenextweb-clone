@@ -58,6 +58,11 @@ img {
   height: 100%;
 }
 
+.inherit-size {
+  width: inherit;
+  height: inherit;
+}
+
 .s-b {
   border: 1px solid;
 }
@@ -72,6 +77,10 @@ img {
 
 .font-inter {
   font-family: 'Inter', sans-serif;
+}
+
+.container {
+  margin: 0 21px;
 }
 
 /* ================================================== Nav section ============================================= */
@@ -152,6 +161,7 @@ img {
 }
 
 .gradient-dark {
+  display: inline-block;
   background: rgba(0, 0, 0, 0.25) url(../images/image-gradient.png) no-repeat;
   background-position: 0 0;
   background-size: 100% 100%;
@@ -363,6 +373,26 @@ img[src='/images/tnw-header.png'] {
   position: absolute;
   top: 12px;
   left: 12px;
+}
+
+/* ============================================= Most Popular section ================================ */
+
+.most-popular-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  border: 1px solid teal;
+}
+
+.popular-top {
+  position: relative;
+  background: url(../images/zoom-5.0.jpg) no-repeat center center/cover;
+  min-height: 298px;
+}
+
+.popular-top .bottom-content {
+  position: relative;
+  min-height: inherit;
+  z-index: 4;
 }
 
 /* Media Queries */
