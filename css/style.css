@@ -651,4 +651,19 @@ img[src='/images/tnw-header.png'] {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
   }
+
+  /* Latest Funding Section */
+
+  .latest-funding-heading {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .latest-funding-cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .latest-funding-cards > *:last-child {
+    display: block;
+  }
 }
