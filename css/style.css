@@ -4,11 +4,9 @@
   --light-color: #fefefe;
   --yellow-color: #fd3;
   --sm-font: 0.875rem;
-  --font-orbitron: font-family: 'Orbitron', sans-serif;
-  --font-public: font-family: 'Public Sans', sans-serif;
-  --font-inter: font-family: 'Inter', sans-serif;
-
-
+  --font-orbitron: 'Orbitron, sans-serif';
+  --font-public: 'Public Sans, sans-serif';
+  --font-inter: 'Inter', sans-serif;
 }
 
 * {
@@ -219,7 +217,8 @@ img[src='/images/tnw-header.png'] {
 
 /* Latest News Section */
 
-.latest-news, .latest-funding {
+.latest-news,
+.latest-funding {
   margin: 2rem 0.5rem;
   border: 1px solid green;
 }
@@ -275,6 +274,8 @@ img[src='/images/tnw-header.png'] {
 
 /* Latest Funding Section */
 
+/* The code is not clean so we'll apply DRY principes in the polishing stage */
+
 .latest-funding a {
   color: var(--dark-color);
 }
@@ -284,9 +285,10 @@ img[src='/images/tnw-header.png'] {
   height: 63px;
 }
 
-.latest-funding .section-link, .latest-funding-heading a {
+.latest-funding .section-link,
+.latest-funding-heading a {
   color: var(--primary-color);
-  margin-bottom: .85rem;
+  margin-bottom: 0.85rem;
 }
 
 .latest-funding-heading {
@@ -295,18 +297,18 @@ img[src='/images/tnw-header.png'] {
 
 .latest-funding-heading a {
   display: block;
-  margin-bottom: .7rem;
+  margin-bottom: 0.7rem;
 }
 
-.latest-news-cards {
-  display:grid;
+.latest-fumding-cards {
+  display: grid;
   grid-template-columns: 1fr;
 }
 
 .funding-card {
   display: flex;
   flex-direction: column;
-  position: relative;;
+  position: relative;
 }
 
 .fund-card-header .top {
@@ -353,10 +355,9 @@ img[src='/images/tnw-header.png'] {
 }
 
 .fund-card-footer {
-  font-size: 11px;;
+  font-size: 11px;
   padding: 16px 0 16px 10px;
 }
-
 
 .fund-card-header img {
   position: absolute;
@@ -460,11 +461,11 @@ img[src='/images/tnw-header.png'] {
 
   /* ***************************Header Section*********************************** */
 
-  /* 
+  /*
   To do:
     1. Narrow and bold fonts
     2. some problem with the right cards position
-    3. we applied height and max-height for desktop version 
+    3. we applied height and max-height for desktop version
   */
 
   header {
@@ -476,6 +477,7 @@ img[src='/images/tnw-header.png'] {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-gap: 0.5rem;
+
     /* height: 52vh; */
   }
 
@@ -517,6 +519,7 @@ img[src='/images/tnw-header.png'] {
   .latest-news {
     margin: 2rem 1.5rem;
   }
+
   .latest-news-cards {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -582,14 +585,10 @@ img[src='/images/tnw-header.png'] {
   }
 
   .card-logo-content {
-    display: block;
     position: relative;
     top: -184px;
     left: 3px;
     margin-right: 1rem;
-  }
-
-  .card-logo-content {
     display: flex;
     justify-content: space-between;
     justify-self: flex-start;
