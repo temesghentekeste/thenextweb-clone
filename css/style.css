@@ -212,7 +212,6 @@ img {
 
 img[src='images/tnw-header.png'] { filter: brightness(0) invert(1); }
 
-
 /* Latest News Section */
 
 .latest-news,
@@ -443,10 +442,24 @@ a .fa-briefcase { margin-right: 0.8rem; }
 
 .price .amount { text-decoration: line-through; }
 
-.deals-right {
+.deals-link a,
+.deals-link i {
+  color: var(--primary-color);
+}
+
+.deals-link {
+  margin-bottom: 1rem;
+}
+
+.deals-link h2 {
+  padding-top: 1rem 0;
+  display: inline-block;
+}
+
+.deals-link .deals-right {
   float: right;
   color: var(--primary-color);
-  font-size: 1rem;
+  padding-bottom: 1rem;
 }
 
 .clear-fix { clear: both; }
@@ -893,7 +906,8 @@ a .fa-briefcase { margin-right: 0.8rem; }
 .section-link:hover,
 .latest-funding-hover a:hover,
 .popular-bottom a:hover,
-.deals-right:hover { color: #000; }
+.deals-right:hover,
+.deals-link a:hover { color: #000; }
 
 .f-icon-a:hover {
   background-color: #131313;
@@ -911,8 +925,8 @@ a .fa-briefcase { margin-right: 0.8rem; }
 
 /* Triple Selection */
 
-header .left a:hover,
-header .right a:hover { color: #fff; }
+nav .left a:hover,
+nav .right a:hover { color: #fff; }
 
 /* Quadro Selection */
 
