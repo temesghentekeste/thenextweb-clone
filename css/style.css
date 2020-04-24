@@ -210,7 +210,7 @@ img {
 .author a,
 .author i { color: #777; }
 
-img[src='/images/tnw-header.png'] { filter: brightness(0) invert(1); }
+img[src='images/tnw-header.png'] { filter: brightness(0) invert(1); }
 
 
 /* Latest News Section */
