@@ -1,7 +1,7 @@
 # Responsive Web Design
 
-This project is heatmap of <a href="https://thenextweb.com/"  target="_blank">thenextweb.com</a>: 
-![screenshot](https://github.com/8Bts/Design-Teardown/blob/home-page/images/app-screenshot.png)
+This project is a clone of the home page of <a href="https://thenextweb.com/"  target="_blank">thenextweb.com</a>: 
+![screenshot](https://github.com/temesghentekeste/thenextweb-clone/blob/homepage/images/app-screenshot.png)
 
 ## Built With
 

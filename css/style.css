@@ -895,7 +895,7 @@ a .fa-briefcase { margin-right: 0.8rem; }
 .popular-bottom a:hover,
 .deals-right:hover { color: #000; }
 
-.f-icon-a:hover { 
+.f-icon-a:hover {
   background-color: #131313;
   border: 1px solid #333;
   padding: 8px 11px;
