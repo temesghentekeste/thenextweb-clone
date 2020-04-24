@@ -538,6 +538,7 @@ img[src='/images/tnw-header.png'] {
   display: flex;
   justify-content: center;
   align-items: center;
+  line-height: 2.5;
  }
 
 .footer-bottom span {
@@ -545,6 +546,10 @@ img[src='/images/tnw-header.png'] {
   font-size: 0.82rem;
   font-weight: 300;
   margin-left: 5px;
+}
+
+.footer-bottom .fa-heart {
+  color: #f00;
 }
 
 .footer-logo, .footer-logo-2 {
