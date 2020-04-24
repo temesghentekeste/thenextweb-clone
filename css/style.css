@@ -534,22 +534,27 @@ img[src='/images/tnw-header.png'] {
   background-color: black;
   padding: 3em 0;
   flex-wrap: wrap;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
  }
-
-
 
 .footer-bottom span {
   color: rgba(255, 255, 255, 0.6);
   font-size: 0.82rem;
   font-weight: 300;
+  margin-left: 5px;
 }
 
-.footer-logo { width: 7%; height: 60%; }
+.footer-logo, .footer-logo-2 {
+  height: 15px;
+  width: 80px;
+  margin-right: 5px;
+}
 
-.footer-logo2 {
-  width: 13%;
-  position: relative;
-  top: 7px;
+.footer-logo-2 {
+  height: 28px;;
 }
 
 
