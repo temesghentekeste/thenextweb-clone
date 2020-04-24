@@ -134,7 +134,7 @@ img {
   background: url(../images/AWS-Amazon.png) no-repeat center center/cover;
   position: relative;
   z-index: 1;
-  
+
   /* border: 1px transparent; */
 }
 
@@ -458,6 +458,7 @@ img[src='/images/tnw-header.png'] {
 .clear-fix {
   clear: both;
 }
+
 /* Media Queries */
 @media (max-width: 400px) {
   .lower-nav a {
@@ -676,6 +677,57 @@ img[src='/images/tnw-header.png'] {
   .popular-top {
     min-height: 340px;
   }
+  /* Latest Deals Section */
+  .deals-container {
+    width: 100%;
+    height: 200px;
+    position: relative;
+  }
+
+  .corner {
+    width: 0;
+    height: 0;
+    border-bottom: 64px solid transparent;
+    border-right: 64px solid #fc0;
+    border-left: 64px solid transparent;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .corner span {
+    position: relative;
+    top: 18px;
+    right: 4px;
+    width: 90px;
+    text-align: center;
+    font-size: 10px;
+    font-family: arial, sans-serif;
+    font-weight: 600;
+    transform: rotate(45deg);
+    display: block;
+    z-index: 1;
+  }
+
+  .latest-deals .card-description{
+    padding: 0.7rem 0;
+  }
+
+  .card-description .price {
+    display: inline-block;
+    white-space: nowrap;
+    margin-top: 0.4rem;
+  }
+
+  .price span,
+  .price i {
+    color: #777;
+    font-size: 0.75rem;
+  }
+
+  .price > span:first-child {
+    text-decoration: line-through;
+  }
 }
 
 @media (min-width: 920px) {
@@ -798,4 +850,7 @@ img[src='/images/tnw-header.png'] {
     font-size: 1.25rem;
     font-weight: 800;
   }
+
+  /* Latest Deals Section */
+  
 }
