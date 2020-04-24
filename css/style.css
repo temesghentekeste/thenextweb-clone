@@ -15,22 +15,16 @@
   box-sizing: border-box;
 }
 
-body {
-  background: var(--light-color);
-}
+body { background: var(--light-color); }
 
 a {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
 }
 
-ul {
-  list-style: none;
-}
+ul { list-style: none; }
 
-ul li {
-  display: inline-block;
-}
+ul li { display: inline-block; }
 
 img {
   width: 100%;
@@ -63,9 +57,7 @@ img {
   justify-content: center;
 }
 
-.space-between {
-  justify-content: space-between;
-}
+.space-between { justify-content: space-between; }
 
 .fill-parent {
   width: 100%;
@@ -77,51 +69,40 @@ img {
   height: inherit;
 }
 
-.s-b {
-  border: 1px solid;
-}
+.s-b { border: 1px solid; }
 
-.font-orbitron {
-  font-family: 'Orbitron', sans-serif;
-}
+.font-orbitron { font-family: 'Orbitron', sans-serif; }
 
-.font-public {
-  font-family: 'Public Sans', sans-serif;
-}
+.font-public { font-family: 'Public Sans', sans-serif; }
 
-.font-inter {
-  font-family: 'Inter', sans-serif;
-}
+.font-inter { font-family: 'Inter', sans-serif; }
 
-.container {
-  margin: 0 21px;
-}
+.container { margin: 0 21px; }
 
 /* ================================================== Nav section ============================================= */
 
-.main-nav {
-  flex-wrap: nowrap;
-}
+.main-nav { flex-wrap: nowrap; }
 
 .nav-top,
-.middle-nav ul {
-  display: none;
-}
+.middle-nav ul { display: none; }
+
+.first-nav-item { color: #fff; }
 
 .logo {
   width: 106px;
   height: 48px;
 }
 
+.nav-middle-links { font-weight: 500; }
+
 .middle-nav i {
   font-size: var(--sm-font);
   padding: 1rem;
+  color: #bebebe;
   border-left: 1px solid #eee;
 }
 
-.middle-nav .font-awsome .bars {
-  order: 1;
-}
+.middle-nav .font-awsome .bars { order: 1; }
 
 .lower-nav {
   height: 60px;
@@ -194,9 +175,7 @@ img {
   z-index: 4;
 }
 
-.card-logo-content {
-  display: none;
-}
+.card-logo-content { display: none; }
 
 .bottom-content {
   display: flex;
@@ -219,9 +198,7 @@ img {
   font-weight: 800;
 }
 
-.card-heading a {
-  color: #fff;
-}
+.card-heading a { color: #fff; }
 
 .author {
   display: inline-block;
@@ -231,20 +208,15 @@ img {
 
 .author span,
 .author a,
-.author i {
-  color: #777;
-}
+.author i { color: #777; }
 
-img[src='/images/tnw-header.png'] {
-  filter: brightness(0) invert(1);
-}
+img[src='/images/tnw-header.png'] { filter: brightness(0) invert(1); }
+
 
 /* Latest News Section */
 
 .latest-news,
-.latest-funding {
-  margin: 2rem 0.5rem;
-}
+.latest-funding { margin: 2rem 0.5rem; }
 
 .section-link {
   display: inline-block;
@@ -254,9 +226,7 @@ img[src='/images/tnw-header.png'] {
   color: var(--primary-color);
 }
 
-.latest-news .chevron {
-  font-size: 0.5rem;
-}
+.latest-news .chevron { font-size: 0.5rem; }
 
 .latest-news-card > a {
   display: inline-block;
@@ -300,9 +270,7 @@ img[src='/images/tnw-header.png'] {
 
 /* The code is not clean so we'll apply DRY principes in the polishing stage */
 
-.latest-funding a {
-  color: var(--dark-color);
-}
+.latest-funding a { color: var(--dark-color); }
 
 .latest-funding img {
   width: 61px;
@@ -315,9 +283,7 @@ img[src='/images/tnw-header.png'] {
   margin-bottom: 0.85rem;
 }
 
-.latest-funding-heading {
-  margin-bottom: 1rem;
-}
+.latest-funding-heading { margin-bottom: 1rem; }
 
 .latest-funding-heading a {
   display: block;
@@ -374,9 +340,8 @@ img[src='/images/tnw-header.png'] {
   margin-bottom: 0.8rem;
 }
 
-a .fa-tag {
-  margin-right: 0.8rem;
-}
+a .fa-tag,
+a .fa-briefcase { margin-right: 0.8rem; }
 
 .fund-card-footer {
   font-size: 11px;
@@ -425,9 +390,7 @@ a .fa-tag {
   color: var(--primary-color);
 }
 
-.pop-middle-left span {
-  font-size: 0.7rem;
-}
+.pop-middle-left span { font-size: 0.7rem; }
 
 .pop-middle-left a {
   display: inline-block;
@@ -470,9 +433,7 @@ a .fa-tag {
   margin-top: 0.4rem;
 }
 
-.card-description p {
-  font-size: 0.9rem;
-}
+.card-description p { font-size: 0.9rem; }
 
 .price span,
 .price i {
@@ -480,9 +441,7 @@ a .fa-tag {
   font-size: 0.83rem;
 }
 
-.price .amount {
-  text-decoration: line-through;
-}
+.price .amount { text-decoration: line-through; }
 
 .deals-right {
   float: right;
@@ -490,9 +449,7 @@ a .fa-tag {
   font-size: 1rem;
 }
 
-.clear-fix {
-  clear: both;
-}
+.clear-fix { clear: both; }
 
 /* ======================================== Latest Deals Section ===================================== */
 .deals-container img {
@@ -500,9 +457,7 @@ a .fa-tag {
   height: 75px;
 }
 
-.corner {
-  display: none;
-}
+.corner { display: none; }
 
 /* ============================================ Footer Section ======================================== */
 
@@ -547,9 +502,7 @@ a .fa-tag {
   margin-left: 5px;
 }
 
-.footer-bottom .fa-heart {
-  color: #f00;
-}
+.footer-bottom .fa-heart { color: var(--primary-color); }
 
 .footer-logo,
 .footer-logo-2 {
@@ -562,7 +515,6 @@ a .fa-tag {
   height: 28px;
   margin-top: 13px;
 }
-
 
 /* Media Queries */
 @media (max-width: 400px) {
@@ -579,9 +531,8 @@ a .fa-tag {
 }
 
 @media (min-width: 768px) {
-  .container {
-    margin: 0 21px !important;
-  }
+
+  .container { margin: 0 21px !important; }
 
   /************************  Nav Section************************************ */
 
@@ -593,13 +544,9 @@ a .fa-tag {
   }
 
   .nav-top,
-  .middle-nav ul {
-    display: block;
-  }
+  .middle-nav ul { display: block; }
 
-  .logo {
-    display: none;
-  }
+  .logo { display: none; }
 
   .md-logo {
     grid-column: 1/2;
@@ -619,13 +566,9 @@ a .fa-tag {
     margin-right: 0.3rem;
   }
 
-  .nav-top li:first-child {
-    margin-left: 1rem;
-  }
+  .nav-top li:first-child { margin-left: 1rem; }
 
-  .nav-top li:last-child {
-    margin-right: 1rem;
-  }
+  .nav-top li:last-child { margin-right: 1rem; }
 
   .middle-nav {
     grid-column: 2 / -1;
@@ -640,18 +583,12 @@ a .fa-tag {
     margin-right: 0.625rem;
   }
 
-  .middle-nav ul li:first-child {
-    margin-left: 1.25rem;
-  }
+  .middle-nav ul li:first-child { margin-left: 1.25rem; }
 
-  .middle-nav .bars {
-    display: none;
-  }
+  .middle-nav .bars { display: none; }
 
   .middle-nav ul li:nth-child(6),
-  .middle-nav ul li:nth-child(7) {
-    display: none;
-  }
+  .middle-nav ul li:nth-child(7) { display: none; }
 
   .lower-nav {
     grid-column: 1 / -1;
@@ -670,9 +607,7 @@ a .fa-tag {
     3. we applied height and max-height for desktop version
   */
 
-  header {
-    margin: 0.5rem;
-  }
+  header { margin: 0.5rem; }
 
   .header-cards {
     grid-template-columns: repeat(3, 1fr);
@@ -692,9 +627,7 @@ a .fa-tag {
     grid-row: 1 / 2;
   }
 
-  .card-content-left .card-heading {
-    font-size: 2.5rem;
-  }
+  .card-content-left .card-heading { font-size: 2.5rem; }
 
   .card-content-left {
     line-height: 1;
@@ -748,17 +681,11 @@ a .fa-tag {
     grid-gap: 1rem;
   }
 
-  .latest-funding-cards > *:last-child {
-    display: none;
-  }
+  .latest-funding-cards > *:last-child { display: none; }
 
-  .latest-funding-heading .left {
-    display: flex;
-  }
+  .latest-funding-heading .left { display: flex; }
 
-  .latest-funding-heading .left > * {
-    margin-right: 0.5rem;
-  }
+  .latest-funding-heading .left > * { margin-right: 0.5rem; }
 
   .latest-funding-heading .left > *::after {
     height: 13px;
@@ -770,9 +697,7 @@ a .fa-tag {
     content: '';
   }
 
-  .latest-funding-heading .left > *:last-child::after {
-    display: none;
-  }
+  .latest-funding-heading .left > *:last-child::after { display: none; }
 
   /* ============================================= Most Popular section ================================ */
 
@@ -781,9 +706,7 @@ a .fa-tag {
     grid-gap: 1.24em;
   }
 
-  .popular-top {
-    min-height: 340px;
-  }
+  .popular-top { min-height: 340px; }
 
   /* Latest Deals Section */
   .deals-container {
@@ -823,9 +746,7 @@ a .fa-tag {
     z-index: 1;
   }
 
-  .latest-deals .card-description {
-    padding: 0.7rem 0;
-  }
+  .latest-deals .card-description { padding: 0.7rem 0; }
 
   .card-description .price {
     display: inline-block;
@@ -833,9 +754,7 @@ a .fa-tag {
     margin-top: 0.4rem;
   }
 
-  .card-description p {
-    font-size: 0.94rem;
-  }
+  .card-description p { font-size: 0.94rem; }
 
   .price span,
   .price i {
@@ -843,9 +762,7 @@ a .fa-tag {
     font-size: 0.75rem;
   }
 
-  .price > span:first-child {
-    text-decoration: line-through;
-  }
+  .price > span:first-child { text-decoration: line-through; }
 }
 
 @media (min-width: 920px) {
@@ -856,22 +773,14 @@ a .fa-tag {
     margin: auto !important;
   }
 
-  .main-nav {
-    display: block;
-  }
+  .main-nav { display: block; }
 
-  .main-nav .md-logo {
-    display: none;
-  }
+  .main-nav .md-logo { display: none; }
 
   .middle-nav ul li:nth-child(6),
-  .middle-nav ul li:nth-child(7) {
-    display: inline-block;
-  }
+  .middle-nav ul li:nth-child(7) { display: inline-block; }
 
-  .lower-nav {
-    justify-content: start;
-  }
+  .lower-nav { justify-content: start; }
 
   /* ***************************Header Section*********************************** */
 
@@ -883,9 +792,7 @@ a .fa-tag {
     max-height: 560px;
   }
 
-  .gradient-red {
-    display: block;
-  }
+  .gradient-red { display: block; }
 
   .card-logo-content {
     position: relative;
@@ -912,9 +819,7 @@ a .fa-tag {
     color: #fff;
   }
 
-  .left-card .card-heading {
-    font-size: 3.4rem;
-  }
+  .left-card .card-heading { font-size: 3.4rem; }
 
   .card-content-right {
     display: flex;
@@ -940,9 +845,7 @@ a .fa-tag {
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   }
 
-  .latest-funding-cards > *:last-child {
-    display: block;
-  }
+  .latest-funding-cards > *:last-child { display: block; }
 
   /* ============================================= Most Popular section ================================ */
 
@@ -951,9 +854,7 @@ a .fa-tag {
     grid-gap: 1.24em;
   }
 
-  .popular-top {
-    min-height: 240px;
-  }
+  .popular-top { min-height: 240px; }
 
   .popular-top .caption {
     font-size: 1rem;
@@ -973,3 +874,46 @@ a .fa-tag {
 
   .card-description p { font-size: 0.99rem; }
 }
+
+/* ============================================= Hover Colors ===================================== */
+
+/* Doubles selections */
+
+.name-link:hover,
+.footer-links a:hover { color: #fff; }
+
+.middle-nav i:hover,
+.body a:hover { color: #7e7e7e; }
+
+.left-card:hover,
+.right-card-top:hover,
+.right-card-bottom:hover { opacity: 0.96; }
+
+.nav-middle-links a:hover,
+.section-link:hover,
+.latest-funding-hover a:hover,
+.popular-bottom a:hover,
+.deals-right:hover { color: #000; }
+
+.f-icon-a:hover { 
+  background-color: #131313;
+  border: 1px solid #333;
+  padding: 8px 11px;
+}
+
+.most-popular-cards .bottom-text:hover,
+.pop-middle-left a:hover { text-decoration: underline; }
+
+.card-description p:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+/* Triple Selection */
+
+header .left a:hover,
+header .right a:hover { color: #fff; }
+
+/* Quadro Selection */
+
+.latest-news .author a span:hover { color: #000; }
