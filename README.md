@@ -12,7 +12,7 @@ This project is a clone of the home page of <a href="https://thenextweb.com/"  t
 
 ## Live Demo
 
-<a href="https://rawcdn.githack.com/8Bts/Design-Teardown/d2a1eb223c1384078696949e91470c39ab3ee16e/index.html" target="_blank">Live version</a>
+<a href="https://rawcdn.githack.com/temesghentekeste/thenextweb-clone/77c9c95929b006d466e71a0270f273d210695ae3/index.html" target="_blank">Live version</a>
 
 ## Authors
 
