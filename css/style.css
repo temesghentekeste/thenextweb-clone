@@ -374,7 +374,7 @@ img[src='/images/tnw-header.png'] {
   margin-bottom: 0.8rem;
 }
 
-.body a i {
+a .fa-tag {
   margin-right: 0.8rem;
 }
 
@@ -480,9 +480,8 @@ img[src='/images/tnw-header.png'] {
   font-size: 0.83rem;
 }
 
-.price > span:first-child {
+.price .amount {
   text-decoration: line-through;
-
 }
 
 .deals-right {
@@ -495,7 +494,7 @@ img[src='/images/tnw-header.png'] {
   clear: both;
 }
 
-  /* ======================================== Latest Deals Section ===================================== */
+/* ======================================== Latest Deals Section ===================================== */
 .deals-container img {
   width: 77px;
   height: 75px;
@@ -526,11 +525,11 @@ img[src='/images/tnw-header.png'] {
   margin-right: 1em;
 }
 
-.footer-links { font-size: .655rem; }
+.footer-links { font-size: 0.655rem; }
 
 .footer-links a { margin-right: 1em; }
 
-.footer-bottom { 
+.footer-bottom {
   background-color: black;
   padding: 3em 0;
   flex-wrap: wrap;
@@ -539,7 +538,7 @@ img[src='/images/tnw-header.png'] {
   justify-content: center;
   align-items: center;
   line-height: 2.5;
- }
+}
 
 .footer-bottom span {
   color: rgba(255, 255, 255, 0.6);
@@ -552,14 +551,15 @@ img[src='/images/tnw-header.png'] {
   color: #f00;
 }
 
-.footer-logo, .footer-logo-2 {
+.footer-logo,
+.footer-logo-2 {
   height: 15px;
   width: 80px;
   margin-right: 5px;
 }
 
 .footer-logo-2 {
-  height: 28px;;
+  height: 28px;
   margin-top: 13px;
 }
 
@@ -784,6 +784,7 @@ img[src='/images/tnw-header.png'] {
   .popular-top {
     min-height: 340px;
   }
+
   /* Latest Deals Section */
   .deals-container {
     width: 100%;
@@ -822,7 +823,7 @@ img[src='/images/tnw-header.png'] {
     z-index: 1;
   }
 
-  .latest-deals .card-description{
+  .latest-deals .card-description {
     padding: 0.7rem 0;
   }
 
@@ -833,7 +834,7 @@ img[src='/images/tnw-header.png'] {
   }
 
   .card-description p {
-    font-size: .94rem;
+    font-size: 0.94rem;
   }
 
   .price span,
@@ -845,7 +846,6 @@ img[src='/images/tnw-header.png'] {
   .price > span:first-child {
     text-decoration: line-through;
   }
-
 }
 
 @media (min-width: 920px) {
@@ -971,6 +971,5 @@ img[src='/images/tnw-header.png'] {
 
   /* Latest Deals Section */
 
-  .card-description p { font-size: .99rem; }
-  
+  .card-description p { font-size: 0.99rem; }
 }
