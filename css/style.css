@@ -560,6 +560,7 @@ img[src='/images/tnw-header.png'] {
 
 .footer-logo-2 {
   height: 28px;;
+  margin-top: 13px;
 }
 
 
@@ -717,7 +718,7 @@ img[src='/images/tnw-header.png'] {
   /* Latest News Section */
 
   .latest-news-cards {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(216px, 1fr));
     grid-template-rows: repeat(3, 1fr);
     grid-auto-rows: 1fr;
     grid-gap: 1.5rem;
@@ -732,16 +733,18 @@ img[src='/images/tnw-header.png'] {
     width: 100%;
     height: 100%;
     margin-bottom: 1rem;
+    flex: 1;
   }
 
   .latest-news-card .card-description {
     margin-left: 0;
+    height: 100px;
   }
 
   /* Latest Funding Section */
 
   .latest-funding-cards {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     grid-gap: 1rem;
   }
 
@@ -774,7 +777,7 @@ img[src='/images/tnw-header.png'] {
   /* ============================================= Most Popular section ================================ */
 
   .most-popular-cards {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
     grid-gap: 1.24em;
   }
 
@@ -922,7 +925,7 @@ img[src='/images/tnw-header.png'] {
   /* Latest News Section */
 
   .latest-news-cards {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(204px, 1fr));
     grid-template-rows: repeat(2, 1fr);
   }
 
@@ -934,7 +937,7 @@ img[src='/images/tnw-header.png'] {
   }
 
   .latest-funding-cards {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   }
 
   .latest-funding-cards > *:last-child {
@@ -944,7 +947,7 @@ img[src='/images/tnw-header.png'] {
   /* ============================================= Most Popular section ================================ */
 
   .most-popular-cards {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(305px, 1fr));
     grid-gap: 1.24em;
   }
 
