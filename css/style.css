@@ -1,0 +1,924 @@
+:root {
+  --primary-color: #f94020;
+  --dark-color: #131313;
+  --light-color: #fefefe;
+  --yellow-color: #fd3;
+  --sm-font: 0.875rem;
+  --font-orbitron: 'Orbitron, sans-serif';
+  --font-public: 'Public Sans, sans-serif';
+  --font-inter: 'Inter', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body { background: var(--light-color); }
+
+a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+ul { list-style: none; }
+
+ul li { display: inline-block; }
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+/* ============================================ Utility Classes ============================================= */
+
+.flex-h {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.flex-v {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-center-v,
+.flex-center-h {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-center-h { flex-flow: row nowrap; }
+
+.flex-end-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.space-between { justify-content: space-between; }
+
+.fill-parent {
+  width: 100%;
+  height: 100%;
+}
+
+.inherit-size {
+  width: inherit;
+  height: inherit;
+}
+
+.s-b { border: 1px solid; }
+
+.font-orbitron { font-family: 'Orbitron', sans-serif; }
+
+.font-public { font-family: 'Public Sans', sans-serif; }
+
+.font-inter { font-family: 'Inter', sans-serif; }
+
+.container { margin: 0 21px; }
+
+/* ================================================== Nav section ============================================= */
+
+.main-nav { flex-wrap: nowrap; }
+
+.nav-top,
+.middle-nav ul { display: none; }
+
+.first-nav-item { color: #fff; }
+
+.logo {
+  width: 106px;
+  height: 48px;
+}
+
+.nav-middle-links { font-weight: 500; }
+
+.middle-nav i {
+  font-size: var(--sm-font);
+  padding: 1rem;
+  color: #bebebe;
+  border-left: 1px solid #eee;
+}
+
+.middle-nav .font-awsome .bars { order: 1; }
+
+.lower-nav {
+  height: 60px;
+  background: var(--yellow-color);
+  padding: 1rem;
+  font-size: var(--sm-font);
+  text-align: center;
+}
+
+.lower-nav a {
+  color: var(--dark-color);
+  margin-right: 0.4rem;
+}
+
+/* ================================================== Header section ============================================= */
+
+.header-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 167px);
+  grid-gap: 0.5em;
+  margin: 0.5em;
+}
+
+.left-card {
+  background: url(../images/AWS-Amazon.png) no-repeat center center/cover;
+  position: relative;
+  z-index: 1;
+}
+
+.header-logo { width: 51%; }
+
+.right-card-top {
+  background: url(../images/broken-comp.png) no-repeat center center/cover;
+  position: relative;
+  z-index: 2;
+}
+
+.card-content-left,
+.card-content-right {
+  position: relative;
+  z-index: 5;
+}
+
+.right-card-bottom {
+  background: url(../images/WhatsApp.png) no-repeat center center/cover;
+  position: relative;
+  z-index: 1;
+}
+
+.card-link {
+  position: absolute;
+  z-index: 6;
+}
+
+.gradient-dark {
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.25) url(../images/image-gradient.png) no-repeat;
+  background-position: 0 0;
+  background-size: 100% 100%;
+  position: absolute;
+  z-index: 3;
+}
+
+.gradient-red {
+  display: none;
+  background: transparent url(../images/cover-gradient.png) no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+  position: absolute;
+  mix-blend-mode: lighten;
+  z-index: 4;
+}
+
+.card-logo-content { display: none; }
+
+.bottom-content { padding: 1rem; }
+
+.caption {
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.card-heading {
+  display: inline-block;
+  margin-top: 0.3rem;
+  font-size: 1.25rem;
+  font-weight: 800;
+}
+
+.card-heading a { color: #fff; }
+
+.author {
+  display: inline-block;
+  white-space: nowrap;
+  margin-top: 0.4rem;
+}
+
+.author span,
+.author a,
+.author i { color: #777; }
+
+img[src='images/tnw-header.png'] { filter: brightness(0) invert(1); }
+
+/* Latest News Section */
+
+.latest-news,
+.latest-funding { margin: 2rem 0.5rem; }
+
+.section-link {
+  display: inline-block;
+  margin-bottom: 2rem;
+  font-weight: 900;
+  font-size: 1.12rem;
+  color: var(--primary-color);
+}
+
+.latest-news .chevron { font-size: 0.5rem; }
+
+.latest-news-card > a {
+  display: inline-block;
+  width: 78px;
+  height: 70px;
+}
+
+.latest-news-card img {
+  width: 100%;
+  height: 100%;
+}
+
+.latest-news-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.latest-news-card {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 0.85rem;
+}
+
+.latest-news-card .card-description {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0.85rem;
+}
+
+.latest-news-card p {
+  color: var(--dark-color);
+  font-weight: 600;
+}
+
+.latest-news-card .author {
+  color: #aaa;
+  font-size: 0.75rem;
+}
+
+/* Latest Funding Section */
+
+/* The code is not clean so we'll apply DRY principes in the polishing stage */
+
+.latest-funding a { color: var(--dark-color); }
+
+.latest-funding img {
+  width: 61px;
+  height: 63px;
+}
+
+.latest-funding .section-link,
+.latest-funding-heading a {
+  color: var(--primary-color);
+  margin-bottom: 0.85rem;
+}
+
+.latest-funding-heading { margin-bottom: 1rem; }
+
+.latest-funding-heading a {
+  display: block;
+  margin-bottom: 0.7rem;
+}
+
+.latest-funding-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.funding-card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.fund-card-header .top {
+  display: block;
+  padding: 10px 16px 10px 84px;
+  background: var(--primary-color);
+  color: var(--light-color);
+  font-size: 18px;
+}
+
+.fund-card-header .bottom {
+  background: #ffece7;
+  display: block;
+  padding: 10px 80px;
+  font-size: 18px;
+}
+
+.bottom span {
+  display: block;
+  font-weight: 600;
+}
+
+.bottom .fund-type {
+  font-weight: normal;
+  font-family: var(--font-orbitron);
+  font-size: 11px;
+}
+
+.funding-card .body {
+  padding: 16px 0 10px;
+  font-size: 13px;
+  display: block;
+  margin-left: 16px;
+  border-bottom: 1px solid #ffece7;
+}
+
+.body a {
+  display: block;
+  margin-bottom: 0.8rem;
+}
+
+a .fa-tag,
+a .fa-briefcase { margin-right: 0.8rem; }
+
+.fund-card-footer {
+  font-size: 11px;
+  padding: 16px 0 16px 10px;
+}
+
+.fund-card-header img {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+}
+
+/* ============================================= Most Popular section ================================ */
+
+.most-popular-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.popular-top {
+  position: relative;
+  background: url(../images/zoom-5.0.jpg) no-repeat center center/cover;
+  min-height: 298px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.popular-top .bottom-content {
+  position: relative;
+  z-index: 7;
+}
+
+.popular-top .author { font-size: 0.8rem; }
+
+.popular-top .caption2 {
+  color: white;
+  font-size: 0.6rem;
+}
+
+.pop-middle-left {
+  background-color: #fff4f2;
+  flex: 1;
+  padding-top: 10px;
+  padding-left: 10px;
+  color: var(--primary-color);
+}
+
+.pop-middle-left span { font-size: 0.7rem; }
+
+.pop-middle-left a {
+  display: inline-block;
+  padding-top: 3px;
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.pop-middle-right {
+  width: 106px;
+  height: 90px;
+  padding-top: 10px;
+}
+
+.popular-bottom a {
+  color: #555;
+  font-size: 0.8rem;
+}
+
+.popular-bottom li {
+  display: flex;
+  padding: 6px 8px;
+  border-bottom: 1px solid #eee;
+}
+
+.popular-bottom li::before {
+  content: '\2022';
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  color: var(--primary-color);
+}
+
+/* ================================================== Deals Section ============================================= */
+
+.card-description .price {
+  display: inline-block;
+  white-space: nowrap;
+  margin-top: 0.4rem;
+}
+
+.card-description p { font-size: 0.9rem; }
+
+.price span,
+.price i {
+  color: #777;
+  font-size: 0.83rem;
+}
+
+.price .amount { text-decoration: line-through; }
+
+.deals-link a,
+.deals-link i {
+  color: var(--primary-color);
+}
+
+.deals-link {
+  margin-bottom: 1rem;
+}
+
+.deals-link h2 {
+  padding-top: 1rem 0;
+  display: inline-block;
+}
+
+.deals-link .deals-right {
+  float: right;
+  color: var(--primary-color);
+  padding-bottom: 1rem;
+}
+
+.clear-fix { clear: both; }
+
+/* ======================================== Latest Deals Section ===================================== */
+.latest-news img,
+.deals-container img {
+  width: 77px;
+  height: 75px;
+}
+
+.corner { display: none; }
+
+/* ============================================ Footer Section ======================================== */
+
+.footer-top {
+  padding: 3em 0 2em;
+  background-color: #131313;
+}
+
+.footer-icons {
+  font-size: 1.1rem;
+  margin-bottom: 1.2em;
+}
+
+.f-icon-a {
+  display: inline-block;
+  background-color: #333;
+  color: white;
+  padding: 10px 12px;
+  border-radius: 50%;
+  margin-right: 1em;
+}
+
+.footer-links { font-size: 0.655rem; }
+
+.footer-links a { margin-right: 1em; }
+
+.footer-bottom {
+  background-color: black;
+  padding: 3em 0;
+  flex-wrap: wrap;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 2.5;
+}
+
+.footer-bottom span {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.82rem;
+  font-weight: 300;
+  margin-left: 5px;
+}
+
+.footer-bottom .fa-heart { color: var(--primary-color); }
+
+.footer-logo,
+.footer-logo-2 {
+  height: 15px;
+  width: 80px;
+  margin-right: 5px;
+}
+
+.footer-logo-2 {
+  height: 28px;
+  margin-top: 13px;
+}
+
+/* Media Queries */
+@media (max-width: 400px) {
+  .lower-nav a {
+    display: inline-block;
+    width: 97vw;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding-left: 0.5rem;
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 768px) {
+
+  .container { margin: 0 21px !important; }
+
+  /************************  Nav Section************************************ */
+
+  .main-nav {
+    display: grid;
+    grid-template-columns: 106px 1fr;
+    grid-template-rows: repeat(3, auto);
+    height: 110px;
+  }
+
+  .nav-top,
+  .middle-nav ul { display: block; }
+
+  .logo { display: none; }
+
+  .md-logo {
+    grid-column: 1/2;
+    grid-row: 1 / span 2;
+    background: url(../images/logo.jpg) no-repeat center center/cover;
+  }
+
+  .nav-top {
+    display: flex;
+    background: var(--dark-color);
+    justify-content: space-between;
+    padding: 0.3rem;
+  }
+
+  .nav-top a {
+    font-size: 0.8rem;
+    margin-right: 0.3rem;
+  }
+
+  .nav-top li:first-child { margin-left: 1rem; }
+
+  .nav-top li:last-child { margin-right: 1rem; }
+
+  .middle-nav {
+    grid-column: 2 / -1;
+    height: 50px;
+    display: flex;
+    align-items: center;
+  }
+
+  .middle-nav a {
+    color: #aaa;
+    font-size: var(--sm-font);
+    margin-right: 0.625rem;
+  }
+
+  .middle-nav ul li:first-child { margin-left: 1.25rem; }
+
+  .middle-nav .bars { display: none; }
+
+  .middle-nav ul li:nth-child(6),
+  .middle-nav ul li:nth-child(7) { display: none; }
+
+  .lower-nav {
+    grid-column: 1 / -1;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* ***************************Header Section*********************************** */
+
+  /*
+  To do:
+    1. Narrow and bold fonts
+    2. some problem with the right cards position
+    3. we applied height and max-height for desktop version
+  */
+
+  header { margin: 0.5rem; }
+
+  .header-cards {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 0.5rem;
+
+    /* height: 52vh; */
+  }
+
+  .left-card {
+    grid-column: 1 / span 2;
+    grid-row: 1 / -1;
+  }
+
+  .right-card-top {
+    grid-column: 3 / -1;
+    grid-row: 1 / 2;
+  }
+
+  .card-content-left .card-heading { font-size: 2.5rem; }
+
+  .card-content-left { line-height: 1; }
+
+  .right-card-top .bottom-content,
+  .right-card-bottom .bottom-content {
+    font-size: 16px;
+    line-height: 1;
+  }
+
+  /* Latest News Section */
+
+  .latest-news-cards {
+    grid-template-columns: repeat(auto-fit, minmax(216px, 1fr));
+    grid-template-rows: repeat(3, 1fr);
+    grid-auto-rows: 1fr;
+    grid-gap: 1.5rem;
+  }
+
+  .latest-news-card {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .latest-news-card .aritcle-image {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 1rem;
+    flex: 1;
+  }
+
+  .latest-news-card .card-description {
+    margin-left: 0;
+    height: 100px;
+  }
+
+  /* Latest Funding Section */
+
+  .latest-funding-cards {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-gap: 1rem;
+  }
+
+  .latest-funding-cards > *:last-child { display: none; }
+
+  .latest-funding-heading .left { display: flex; }
+
+  .latest-funding-heading .left > * { margin-right: 0.5rem; }
+
+  .latest-funding-heading .left > *::after {
+    height: 13px;
+    display: inline-block;
+    margin-left: 0.5rem;
+    width: 1px;
+    background: var(--primary-color);
+    border-right: 1px white;
+    content: '';
+  }
+
+  .latest-funding-heading .left > *:last-child::after { display: none; }
+
+  /* ============================================= Most Popular section ================================ */
+
+  .most-popular-cards {
+    grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+    grid-gap: 1.24em;
+  }
+
+  .popular-top { min-height: 340px; }
+
+  /* Latest Deals Section */
+
+  .deals-container {
+    width: 100%;
+    height: 200px;
+    position: relative;
+  }
+
+  .latest-news img,
+  .deals-container img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .corner {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-bottom: 64px solid transparent;
+    border-right: 64px solid #fc0;
+    border-left: 64px solid transparent;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .corner span {
+    position: relative;
+    top: 18px;
+    right: 4px;
+    width: 90px;
+    text-align: center;
+    font-size: 10px;
+    font-family: arial, sans-serif;
+    font-weight: 600;
+    transform: rotate(45deg);
+    display: block;
+    z-index: 1;
+  }
+
+  .latest-deals .card-description { padding: 0.7rem 0; }
+
+  .card-description .price {
+    display: inline-block;
+    white-space: nowrap;
+    margin-top: 0.4rem;
+  }
+
+  .card-description p { font-size: 0.94rem; }
+
+  .price span,
+  .price i {
+    color: #777;
+    font-size: 0.75rem;
+  }
+
+  .price > span:first-child { text-decoration: line-through; }
+}
+
+@media (min-width: 920px) {
+  /* Utility Classes for desktop screen sizes */
+
+  .container {
+    max-width: 1100px;
+    margin: auto !important;
+  }
+
+  .main-nav { display: block; }
+
+  .main-nav .md-logo { display: none; }
+
+  .middle-nav ul li:nth-child(6),
+  .middle-nav ul li:nth-child(7) { display: inline-block; }
+
+  .lower-nav { justify-content: start; }
+
+  /* ***************************Header Section*********************************** */
+
+  .header-cards {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 0.5rem;
+    height: 560px;
+    max-height: 560px;
+  }
+
+  .gradient-red { display: block; }
+
+  .card-logo-content {
+    position: relative;
+    top: -170px;
+    left: 3px;
+    margin-right: 1rem;
+    display: flex;
+    justify-content: space-between;
+    justify-self: flex-start;
+  }
+
+  .date-span {
+    font-size: 0.85rem;
+    color: var(--light-color);
+    position: relative;
+    top: 9px;
+  }
+
+  .card-heading {
+    display: inline-block;
+    margin-top: 0.3rem;
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #fff;
+  }
+
+  .left-card .card-heading { font-size: 3.4rem; }
+
+  .card-content-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  /* Latest News Section */
+
+  .latest-news-cards {
+    grid-template-columns: repeat(auto-fit, minmax(204px, 1fr));
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  /* Latest Funding Section */
+
+  .latest-funding-heading {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .latest-funding-cards {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+
+  .latest-funding-cards > *:last-child { display: block; }
+
+  /* ============================================= Most Popular section ================================ */
+
+  .most-popular-cards {
+    grid-template-columns: repeat(auto-fit, minmax(305px, 1fr));
+    grid-gap: 1.24em;
+  }
+
+  .popular-top { min-height: 240px; }
+
+  .popular-top .caption {
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+
+  .popular-top .card-heading {
+    display: inline-block;
+    margin-top: 0.3rem;
+    font-size: 1.25rem;
+    font-weight: 800;
+  }
+
+  /* Latest Deals Section */
+
+  .card-description p { font-size: 0.99rem; }
+}
+
+/* ============================================= Hover Colors ===================================== */
+
+/* Doubles selections */
+
+.name-link:hover,
+.footer-links a:hover { color: #fff; }
+
+.middle-nav i:hover,
+.body a:hover { color: #7e7e7e; }
+
+.left-card:hover,
+.right-card-top:hover,
+.right-card-bottom:hover { opacity: 0.96; }
+
+.nav-middle-links a:hover,
+.section-link:hover,
+.latest-funding-hover a:hover,
+.popular-bottom a:hover,
+.deals-right:hover,
+.deals-link a:hover { color: #000; }
+
+.f-icon-a:hover {
+  background-color: #131313;
+  border: 1px solid #333;
+  padding: 8px 11px;
+}
+
+.most-popular-cards .bottom-text:hover,
+.pop-middle-left a:hover { text-decoration: underline; }
+
+.card-description p:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+/* Triple Selection */
+
+nav .left a:hover,
+nav .right a:hover { color: #fff; }
+
+/* Quadro Selection */
+
+.latest-news .author a span:hover { color: #000; }
