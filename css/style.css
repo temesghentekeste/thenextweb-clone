@@ -43,18 +43,20 @@ img {
   flex-direction: column;
 }
 
-.flex-center-v {
+.flex-center-v,
+.flex-center-h {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
 }
 
-.flex-center-h {
+.flex-center-h { flex-flow: row nowrap; }
+
+.flex-end-column {
   display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .space-between { justify-content: space-between; }
@@ -122,7 +124,9 @@ img {
 .header-cards {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 167px);
+  grid-gap: 0.5em;
+  margin: 0.5em;
 }
 
 .left-card {
@@ -177,12 +181,7 @@ img {
 
 .card-logo-content { display: none; }
 
-.bottom-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  padding: 1rem;
-}
+.bottom-content { padding: 1rem; }
 
 .caption {
   font-size: 1rem;
@@ -465,6 +464,7 @@ a .fa-briefcase { margin-right: 0.8rem; }
 .clear-fix { clear: both; }
 
 /* ======================================== Latest Deals Section ===================================== */
+.latest-news img,
 .deals-container img {
   width: 77px;
   height: 75px;
@@ -642,18 +642,7 @@ a .fa-briefcase { margin-right: 0.8rem; }
 
   .card-content-left .card-heading { font-size: 2.5rem; }
 
-  .card-content-left {
-    line-height: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-  }
-
-  .card-content-right {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-  }
+  .card-content-left { line-height: 1; }
 
   .right-card-top .bottom-content,
   .right-card-bottom .bottom-content {
@@ -722,12 +711,14 @@ a .fa-briefcase { margin-right: 0.8rem; }
   .popular-top { min-height: 340px; }
 
   /* Latest Deals Section */
+
   .deals-container {
     width: 100%;
     height: 200px;
     position: relative;
   }
 
+  .latest-news img,
   .deals-container img {
     width: 100%;
     height: 100%;

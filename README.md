@@ -1,7 +1,15 @@
 # Responsive Web Design
 
 This project is a clone of the home page of <a href="https://thenextweb.com/"  target="_blank">thenextweb.com</a>: 
+
+## Desktop
 ![screenshot](https://github.com/temesghentekeste/thenextweb-clone/blob/homepage/images/app-screenshot.png)
+
+## Tablet
+![screenshot](https://github.com/temesghentekeste/thenextweb-clone/blob/homepage/images/app-screenshot-tablet.png)
+
+## Mobile
+![screenshot](https://github.com/temesghentekeste/thenextweb-clone/blob/homepage/images/app-screenshot-mobile.png)
 
 ## Built With
 
@@ -12,7 +20,7 @@ This project is a clone of the home page of <a href="https://thenextweb.com/"  t
 
 ## Live Demo
 
-<a href="https://rawcdn.githack.com/temesghentekeste/thenextweb-clone/77c9c95929b006d466e71a0270f273d210695ae3/index.html" target="_blank">Live version</a>
+<a href="https://rawcdn.githack.com/temesghentekeste/thenextweb-clone/31d0f0eec6c8df4f53796a7734b09342a695ce5a/index.html" target="_blank">Live version</a>
 
 ## Authors
 
